@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "src/main.ts", // Replace this with the entry point of your application
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "src/main.ts" // Replace this with the entry point of your application
+    }
+  ],
+  "env": {
+    // Add environment variables here if needed
+  }
+}
